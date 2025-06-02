@@ -25,6 +25,7 @@
   - ⚙️ Data whitening (SHA256, BLAKE2b, XOR)
   - 📈 Shannon entropy estimation
   - 🧪 Entropy injection into the Linux kernel
+  - 🐍 Python script to gather test results with ent, dieharder and rng-test.
 - Two modes:
   - Real-time recording
   - Offline processing of `.wav` files
@@ -66,6 +67,14 @@ make
 ```bash
 ./acoustic_entropy -w sha256,blake2b
 ```
+
+---
+
+## 🐍 Python Script
+
+Run the Python script to gather test results. Modify the script itself and specify the `base_dir` and `output_excel` directories to your liking.
+
+**Note:** `base_dir` must be a directory containing multiple subdirectories. Each of these subdirectories should have the same structure as the `/datos` directory that is created by default by the C program.
 
 ---
 
